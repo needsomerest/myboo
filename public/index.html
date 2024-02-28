@@ -44,7 +44,7 @@ body {
   left: 2.5vmin;
   top: 0vmin;
   
-  animation: slide-rev 0.2s ease-out;
+  /* animation: slide-rev 0.2s ease-out; */
 }
 
 .message {
@@ -138,7 +138,7 @@ body {
 
   top: 0;
   transform-origin: top;
-  animation: open-rev 2s;
+  
 }
 
 .container:hover .lid {
@@ -187,12 +187,68 @@ body {
     transform: translatey(-15vmin);
   }
 }
+
+.button {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  margin-left: 80px;
+  margin-top: 50px;
+  background-color: #FE6054; 
+  color: white; 
+  border: 2px solid #FE6054;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #FE6054;
+}
+
+.button2 {
+  background-color: #6CCE6E; 
+  color: white; 
+  border: 2px solid #6CCE6E;
+}
+
+.button2:hover {
+  background-color: white;
+  color: #6CCE6E;
+}
+
     </style>
+
+<script>
+  function myFunction() {
+    alert("ไม่ให้งอน ต้องดีกันเท่านั้น!!!");
+  }
+
+  function navigateToYouTube() {
+            // Change the window.location to the YouTube URL you want to navigate to
+            window.location.href = 'https://youtu.be/lx-YaegA89k?si=p_TE2SC1SH6BL4Oa&t=77';
+        }
+
+
+
+  </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>To nungning</title>
 </head>
 <body>
     <div class="container">
@@ -205,6 +261,20 @@ body {
         <div class="cover"></div>
         <div class="lid"></div>
         <div class="shadow"></div>
+        
+        <div>
+
+          <button class="button button1" onclick="myFunction()">no</button>
+       
+        <button class="button button2" onclick="navigateToYouTube()">yes</button>
       </div>
+      
+      </div>
+      <div>
+
+
+        
+      </div>
+      
 </body>
 </html>
